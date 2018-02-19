@@ -19,6 +19,7 @@ app.get('/change-this-route-name-please', (req, res) => {
     res.status(200).json([
         {id: 1, content: 'Évènement 1'},
         {id: 2, content: 'Évènement 2'},
+        {},
     ]);
 });
 
