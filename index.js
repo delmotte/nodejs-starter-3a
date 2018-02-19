@@ -18,7 +18,7 @@ app.use(morgan('dev'));
 app.get('/test', (req, res) => {
     res.status(200).json([
         {content: 'Bonjour, c\'est Rémi !'},
-        {content: 'Enchangé Rémi, moi c\'est Fabien ;)'},
+        {content: 'Enchanté Rémi, moi c\'est Fabien ;)'},
     ]);
 });
 
