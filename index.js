@@ -15,10 +15,10 @@ app.use(morgan('dev'));
 // Postgres : https://www.npmjs.com/package/pg
 // mysql : https://www.npmjs.com/package/mysql
 
-app.get('/test', (req, res) => {
+app.get('/change-this-route-name-please', (req, res) => {
     res.status(200).json([
-        {content: 'Bonjour, c\'est Rémi !'},
-        {content: 'Enchanté Rémi, moi c\'est Fabien ;)'},
+        {id: 1, content: 'Évènement 1'},
+        {id: 2, content: 'Évènement 2'},
     ]);
 });
 
