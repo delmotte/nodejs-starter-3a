@@ -16,7 +16,10 @@ app.use(morgan('dev'));
 // mysql : https://www.npmjs.com/package/mysql
 
 app.get('/test', (req, res) => {
-    res.status(200).json({hello: 'world'});
+    res.status(200).json([
+        {content: 'Bonjour, c\'est Rémi !'},
+        {content: 'Enchangé Rémi, moi c\'est Fabien ;)'},
+    ]);
 });
 
 const server = app.listen(process.env.PORT || 3000, () => {
